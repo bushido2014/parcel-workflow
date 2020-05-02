@@ -1,0 +1,29 @@
+{
+  "name": "parcel-workflow",
+  "version": "1.0.0",
+  "description": "Simple Workflow with Parcel and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist ./.cache",
+    "dev": "parcel ./src/index.html --open --no-autoinstall",
+    "prod": "parcel build ./src/index.html --no-source-maps --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bushido2014/parcel-workflow.git"
+  },
+  "author": "Viorel Soltan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bushido2014/parcel-workflow/issues"
+  },
+  "homepage": "https://github.com/bushido2014/parcel-workflow#readme",
+  "dependencies": {
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^1.4.4"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
