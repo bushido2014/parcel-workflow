@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+      }
+      h2 {
+        @apply text-xl;
+      }
+      p {
+         @apply leading-7;
+      }
+      h3 {
+        @apply text-lg;
+      }
+}
+@layer components {
+   
+    .container {
+        @apply max-w-screen-xl mx-auto;
+    }
+
+    .btn-blue {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded focus:ring-2 focus:ring-purple-600;
+      }
+  }
