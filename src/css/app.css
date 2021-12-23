@@ -15,14 +15,16 @@
       h3 {
         @apply text-lg;
       }
+      
+      body {
+        @apply font-nunito antialiased;
+      }
 }
-@layer components {
-   
-    .container {
-        @apply max-w-screen-xl mx-auto;
-    }
 
+@layer components {
     .btn-blue {
         @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded focus:ring-2 focus:ring-purple-600;
       }
   }
+
+  

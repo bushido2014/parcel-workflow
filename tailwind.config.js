@@ -1,15 +1,17 @@
 module.exports = {
-  purge: [
-    './dist/**/*.html'
-  ],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      container: {},
+      fontFamily: {
+        nunito: "'Nunito Sans', sans-serif;"
+      },
+      container: {
+        center: true,
+        padding: "1.5rem"
+      }
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

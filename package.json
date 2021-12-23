@@ -2,7 +2,7 @@
   "name": "parcel-workflow",
   "version": "1.0.0",
   "description": "Simple Workflow with Parcel and Tailwind CSS",
-  "main": "index.js",
+  
   "scripts": {
     "clean": "rm -rf ./dist ./.cache",
     "dev": "parcel ./src/index.html --open --no-autoinstall",
@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/bushido2014/parcel-workflow#readme",
   "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "parcel": "^1.12.4",
-    "postcss": "^8.3.0",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "@tailwindcss/forms": "^0.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
   }
 }
